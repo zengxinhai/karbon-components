@@ -1,5 +1,5 @@
 {
-  "name": "@karbon/components",
+  "name": "karbon-components",
   "version": "0.1.0",
   "private": false,
   "author": { "name": "Xinhai Zeng", "email": "zengxinhai007@gmail.com" },
