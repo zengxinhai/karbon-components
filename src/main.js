@@ -1,8 +1,3 @@
-import Vue from "vue";
-import App from "./App.vue";
-
-Vue.config.productionTip = false;
-
-new Vue({
-  render: h => h(App)
-}).$mount("#app");
+import karbonFormInput from './components/form-controls/karbon-form-input.vue';
+import karbonFormSelect from './components/form-controls/karbon-form-select.vue';
+export { karbonFormInput, karbonFormSelect };

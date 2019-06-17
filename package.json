@@ -1,12 +1,29 @@
 {
   "name": "karbon-components",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": { "name": "Xinhai Zeng", "email": "zengxinhai007@gmail.com" },
+  "keywords": [ "Karbon", "Vue", "component"],
+  "main": "dist/karbon-components.common.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zengxinhai/karbon-components"
+  },
+  "bugs": {
+    "url": "https://github.com/zengxinhai/karbon-components/issues"
+  },
+  "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "prepublish": "vue-cli-service build --target lib --name 'karbon-components' src/main.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.10"
   },
   "dependencies": {
     "core-js": "^2.6.5",
