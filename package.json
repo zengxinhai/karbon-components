@@ -1,9 +1,16 @@
 {
   "name": "karbon-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
-  "author": { "name": "Xinhai Zeng", "email": "zengxinhai007@gmail.com" },
-  "keywords": [ "Karbon", "Vue", "component"],
+  "author": {
+    "name": "Xinhai Zeng",
+    "email": "zengxinhai007@gmail.com"
+  },
+  "keywords": [
+    "Karbon",
+    "Vue",
+    "component"
+  ],
   "main": "dist/karbon-components.common.js",
   "files": [
     "src",
@@ -27,7 +34,8 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vuejs-datepicker": "^1.5.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
