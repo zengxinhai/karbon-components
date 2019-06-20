@@ -26,6 +26,7 @@
   "license": "MIT",
   "scripts": {
     "prepublish": "vue-cli-service build --target lib --name 'karbon-components' src/main.js",
+    "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },

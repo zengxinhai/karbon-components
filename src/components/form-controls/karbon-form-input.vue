@@ -63,13 +63,6 @@ export default {
       type: String,
     }
   },
-  mounted() {
-    if (this.value && this.value !== '') {
-      this.inputToBottom = true
-      this.inputPlaceholder = ''
-      this.labelIsShow = true
-    }
-  },
   data() {
     return {
       inputPlaceholder: this.placeholder,
@@ -78,16 +71,19 @@ export default {
     }
   },
   watch: {
-    value(val) {
-      if (val && val !== '') {
-        this.inputToBottom = true
-        this.inputPlaceholder = ''
-        this.labelIsShow = true
-      } else {
-        this.inputToBottom = false
-        this.labelIsShow = false
-        this.inputPlaceholder = this.placeholder
-      }
+    value: {
+      handler(val) {
+        if (val && val !== '') {
+          this.inputToBottom = true
+          this.inputPlaceholder = ''
+          this.labelIsShow = true
+        } else {
+          this.inputToBottom = false
+          this.labelIsShow = false
+          this.inputPlaceholder = this.placeholder
+        }
+      },
+      immediate: true
     }
   },
 }

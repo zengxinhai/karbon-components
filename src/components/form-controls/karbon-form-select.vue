@@ -75,21 +75,18 @@ export default {
       selectToBottom: false,
     }
   },
-  mounted() {
-    if (this.value && this.value !== '') {
-      this.selectToBottom = true
-      this.labelIsShow = true
-    }
-  },
   watch: {
-    value: function(val) {
-      if (val && val !== '') {
-        this.selectToBottom = true
-        this.labelIsShow = true
-      } else {
-        this.selectToBottom = false
-        this.labelIsShow = false
-      }
+    value: {
+      handler(val) {
+        if ((val || val === 0) && val !== '') {
+          this.selectToBottom = true
+          this.labelIsShow = true
+        } else {
+          this.selectToBottom = false
+          this.labelIsShow = false
+        }
+      },
+      immediate: true
     }
   },
   methods: {

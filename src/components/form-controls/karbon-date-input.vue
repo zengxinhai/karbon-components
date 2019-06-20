@@ -59,29 +59,29 @@ export default {
     }
   },
   watch: {
-    value: function(val) {
-      if (val && val !== '') {
-        this.inputToBottom = true
-        this.inputPlaceholder = ''
-        this.labelIsShow = true
-      } else {
-        this.inputToBottom = false
-        this.labelIsShow = false
-        this.inputPlaceholder = this.placeholder
-      }
+    value: {
+      handler(val) {
+        if (val && val !== '') {
+          this.inputToBottom = true
+          this.inputPlaceholder = ''
+          this.labelIsShow = true
+        } else {
+          this.inputToBottom = false
+          this.labelIsShow = false
+          this.inputPlaceholder = this.placeholder
+        }
+      },
+      immediate: true
     }
   },
   mounted() {
-    if (this.value && this.value !== '') {
-      this.inputToBottom = true
-      this.inputPlaceholder = ''
-      this.labelIsShow = true
-    }
     let input = this.$refs.datepicker.$el.querySelector('input')
+    input.addEventListener('focus', this.activeLabelColor)
     input.addEventListener('blur', this.deactiveLabelColor)
   },
   beforeDestroy() {
     let input = this.$refs.datepicker.$el.querySelector('input')
+    input.removeEventListener('focus', this.activeLabelColor)
     input.removeEventListener('blur', this.deactiveLabelColor)
   },
   methods: {
