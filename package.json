@@ -25,11 +25,11 @@
   },
   "license": "MIT",
   "scripts": {
-    "prepublish": "vue-cli-service build --target lib --name 'karbon-components' src/main.js",
+    "prepublish": "vue-cli-service build --target lib --name 'karbon-components' index.js",
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "deloy:gh-pages": "node deploy-gh-page.js"
+    "deloy:gh-pages": "vue-cli-service build && node deploy-gh-page.js"
   },
   "peerDependencies": {
     "vue": "^2.6.10"
