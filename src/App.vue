@@ -10,7 +10,7 @@
 export default {
   data() {
     return {
-      input: '已经有值了',
+      input: '',
       select: '',
       date: '2019-06-19',
       selectOptions: [
