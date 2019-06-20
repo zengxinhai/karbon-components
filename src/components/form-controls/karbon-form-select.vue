@@ -123,11 +123,9 @@ export default {
       color: #000;
     }
   }
-
   & > select:focus + .label {
     color: $primary-color;
   }
-
   & > .label {
     position: absolute;
     font-size: $small-font-size;
@@ -145,7 +143,6 @@ export default {
       visibility: visible;
     }
   }
-
   & > .error-message {
     position: absolute;
     color: $red;
@@ -153,7 +150,6 @@ export default {
     top: 6px;
     right: 67px;
   }
-
   & > .append {
     position: absolute;
     display: flex;
