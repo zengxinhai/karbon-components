@@ -3,7 +3,7 @@
     <h4>Text Input</h4>
     <KarbonFormInput name="Name" v-model="name" placeholder="Name" />
     <h4>Select</h4>
-    <KarbonFormSelect name="Gender" :options="genderOptions" placeholder="Gender" />
+    <KarbonFormSelect name="Gender" v-model="gender" :options="genderOptions" placeholder="Gender" />
     <h4>Date Input</h4>
     <KarbonDateInput name="Birthday" v-model="birthday" placeholder="Birthday" />
   </div>
@@ -19,11 +19,12 @@ export default {
   data() {
     return {
       name: '',
+      gender: '',
+      birthday: '',
       genderOptions: [
         { text: 'Male', value: 1 },
         { text: 'Female', value: 2 },
       ],
-      birthday: '',
     }
   }
 }

@@ -9,13 +9,10 @@ module.exports = {
   },
   themeConfig: {
     nav: [
-      {
-        text: 'Design Elements',
-        items: [
-          { text: 'Tokens', link: '/tokens/' }, 
-          { text: 'Components', link: '/components/' }
-        ]
-      }
+      { text: 'Design Tokens', link: '/design-tokens/' },
+      { text: 'Elements', link: '/elements/' },
+      { text: 'Patterns', link: '/patterns/' },
+      { text: 'Templates', link: '/templates/' },
     ],
     sidebar: 'auto',
     sidebarDepth: 2,
