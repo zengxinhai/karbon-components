@@ -2,7 +2,7 @@
 home: true
 heroImage: /img/karbon-logo.png
 actionText: Start Explore →
-actionLink: /zh/guide/
+actionLink: /design-tokens/
 features:
 - title: Convenient
   details: Designers could find quickly find design elements on it. Developers could easily reuse those elements also. We get the best of both worlds.
