@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/karbon-components/',
   title: 'Karbon Design System',
   description: 'It is a design system for Karbon Products',
   head: [

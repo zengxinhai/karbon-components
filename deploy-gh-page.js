@@ -1,2 +1,2 @@
 const ghpages = require('gh-pages');
-ghpages.publish('dist', function(err) { console.log(err) });
+ghpages.publish('docs/.vuepress/dist', function(err) { console.log(err) });

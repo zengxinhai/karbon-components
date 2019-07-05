@@ -29,7 +29,7 @@
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "deploy:gh-pages": "vue-cli-service build && node deploy-gh-page.js",
+    "deploy:gh-pages": "vuepress build docs&& node deploy-gh-page.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
