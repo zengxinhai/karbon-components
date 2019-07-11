@@ -109,6 +109,7 @@ export default {
     border: 1px solid $border-color;
     color: #555;
     font-size: $font-size;
+    box-sizing: border-box;
     &:focus {
       border: 1px solid $primary-color;
       transition: border-color .15s ease-in-out;

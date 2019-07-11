@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <karbon-form-input
-      name="formInput"
-      v-model="input"
-      placeholder="名字"
-      prepend="+86"
-      class="example-item"
-    ></karbon-form-input>
+    <div style="padding: 10px;">
+      <karbon-form-input
+        name="formInput"
+        v-model="input"
+        placeholder="名字"
+        prepend="+86"
+        class="example-item"
+      ></karbon-form-input>
+    </div>
     <karbon-form-select
       name="formSelect"
       v-model="select"

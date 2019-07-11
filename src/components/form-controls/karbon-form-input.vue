@@ -14,7 +14,7 @@
         :placeholder="inputPlaceholder"
         :type="type"
         @input="$emit('input', $event.target.value)"
-        :class="{'input-to-bottom': inputToBottom, 'validate-error': error, 'bg-light': true, 'has-prepend': Boolean(prepend)}" 
+        :class="{'input-to-bottom': inputToBottom, 'validate-error': error, 'has-prepend': Boolean(prepend)}" 
       >
       <span class="label" :class="{'label-is-show': labelIsShow}">
         {{ placeholder }}
@@ -117,6 +117,7 @@ export default {
     width: 100%;
     & > input {
       font-size: $font-size;
+      box-sizing: border-box;
       width: 100%;
       border: 1px solid $border-color;
       border-radius: 0.25rem;

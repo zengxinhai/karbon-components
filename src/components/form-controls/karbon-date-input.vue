@@ -126,6 +126,7 @@ export default {
   & > .vdp-datepicker {
     input {
       font-size: $font-size;
+      box-sizing: border-box;
       width: 100%;
       padding: $normal-padding;
       font-weight: 400;
