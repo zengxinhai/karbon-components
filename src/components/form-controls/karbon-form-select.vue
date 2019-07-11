@@ -55,7 +55,10 @@ export default {
   },
   props: {
     name: String,
-    disabled: String,
+    disabled: {
+      type: Boolean,
+      default: false
+    },
     value: [String, Number],
     options: {
       type: Array

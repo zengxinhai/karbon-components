@@ -4,6 +4,7 @@
       id="picker"
       :name="name"
       :value="value"
+      :disabled="disabled"
       :placeholder="placeholder"
       :disabledDates="disabledDates"
       @input="$emit('input', $event)"
@@ -35,6 +36,10 @@ export default {
     },
     value: {
       type: [String, Date],
+    },
+    disabled: {
+      type: Boolean,
+      default: false
     },
     error: {
       type: String,

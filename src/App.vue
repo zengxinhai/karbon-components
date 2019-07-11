@@ -15,11 +15,13 @@
       placeholder="性别"
       :options="selectOptions"
       class="example-item"
+      :disabled="true"
     ></karbon-form-select>
     <karbon-date-input
       v-model="date"
       placeholder="Date"
       class="example-item"
+      :disabled="true"
     ></karbon-date-input>
   </div>
 </template>
