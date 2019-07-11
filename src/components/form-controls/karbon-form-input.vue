@@ -95,18 +95,18 @@ export default {
 .wrapper {
   width: 100%;
   display: flex;
-  font-size: $font-size;
   outline: none;
   border: none;
   > .prepend {
-    height: 57px;
-    line-height: 57px;
+    display: flex;
+    align-items: center;
     padding: 0 16px;
     border: 1px solid $border-color;
     border-right: none;
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     background: $prepend-bg-color;
+    font-size: $font-size;
     &.validate-error {
       border: 1px solid $red;
       border-right: none;
@@ -116,13 +116,13 @@ export default {
     position: relative;
     width: 100%;
     & > input {
+      font-size: $font-size;
       width: 100%;
       border: 1px solid $border-color;
       border-radius: 0.25rem;
       transition: border-color .15s ease-in-out;
       background: $input-bg-color;
       padding: $normal-padding;
-      font-size: inherit;
       &:focus {
         border: 1px solid $primary-color;
         outline: none;
