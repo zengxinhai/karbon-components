@@ -1,8 +1,24 @@
 <template>
   <div id="app">
-    <karbon-form-input name="formInput" v-model="input" placeholder="名字"></karbon-form-input>
-    <karbon-form-select name="formSelect" v-model="select" placeholder="性别" :options="selectOptions"></karbon-form-select>
-    <karbon-date-input v-model="date" placeholder="Date"></karbon-date-input>
+    <karbon-form-input
+      name="formInput"
+      v-model="input"
+      placeholder="名字"
+      prepend="+86"
+      class="example-item"
+    ></karbon-form-input>
+    <karbon-form-select
+      name="formSelect"
+      v-model="select"
+      placeholder="性别"
+      :options="selectOptions"
+      class="example-item"
+    ></karbon-form-select>
+    <karbon-date-input
+      v-model="date"
+      placeholder="Date"
+      class="example-item"
+    ></karbon-date-input>
   </div>
 </template>
 
@@ -25,5 +41,8 @@ export default {
 <style lang="scss" scoped>
 #app {
   width: 1000px;
+}
+.example-item {
+  margin-bottom: 20px;
 }
 </style>
