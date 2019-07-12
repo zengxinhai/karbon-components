@@ -7,6 +7,7 @@
         placeholder="名字"
         prepend="+86"
         class="example-item"
+        :disabled="true"
       ></karbon-form-input>
     </div>
     <karbon-form-select
