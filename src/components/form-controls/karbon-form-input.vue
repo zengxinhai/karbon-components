@@ -142,7 +142,6 @@ export default {
         border-color: #bbb;
         color: #bbb;
         background: transparent;
-        cursor: not-allowed;
       }
       &[readonly] {
         cursor: default;
