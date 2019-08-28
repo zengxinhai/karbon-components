@@ -1,30 +1,24 @@
 <template>
-  <div id="app">
-    <div style="padding: 10px;">
-      <karbon-form-input
-        name="formInput"
-        v-model="input"
-        placeholder="名字"
-        prepend="+86"
-        class="example-item"
-        :disabled="true"
-      ></karbon-form-input>
-    </div>
+  <div id="app" style="padding: 0 10px;">
+    <karbon-form-input
+      name="formInput"
+      v-model="input"
+      placeholder="名字"
+      prepend="+86"
+      class="example-item"
+    />
     <karbon-form-select
       name="formSelect"
       v-model="select"
       placeholder="性别"
       :options="selectOptions"
       class="example-item"
-      :disabled="true"
-    ></karbon-form-select>
+    />
     <karbon-date-input
       v-model="date"
       placeholder="Date"
       class="example-item"
-      :disabled="true"
-      :format="'yyyy-MM-dd'"
-    ></karbon-date-input>
+    />
   </div>
 </template>
 

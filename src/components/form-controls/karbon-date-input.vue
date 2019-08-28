@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper rounded">
+  <div class="wrapper">
     <date-picker
       id="picker"
       v-bind="$attrs"
@@ -137,7 +137,6 @@ export default {
       width: 100%;
       padding: $normal-padding;
       font-weight: 400;
-      color: #495057;
       border: 1px solid #e0e0e0;
       border-radius: 0.25rem;
       background: transparent;

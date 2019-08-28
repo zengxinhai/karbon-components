@@ -9,8 +9,6 @@
       :class="{
         'select-to-bottom': selectToBottom,
         'validate-error': error,
-        'rounded': true,
-        'bg-light': true,
       }"
       ref="select"
       required
@@ -38,7 +36,7 @@
 
     <div
       class="append"
-      :class="{ 'validate-error': Boolean(error), 'rounded-right': true }"
+      :class="{ 'validate-error': Boolean(error)}"
     >
       <div class="icon-down"></div>
     </div>
@@ -110,9 +108,9 @@ export default {
     width: 100%;
     padding: $normal-padding;
     border: 1px solid $border-color;
-    color: #555;
     font-size: $font-size;
     box-sizing: border-box;
+    border-radius: 0.25rem;
     &:focus {
       border: 1px solid $primary-color;
       transition: border-color .15s ease-in-out;
@@ -123,9 +121,6 @@ export default {
     }
     &.select-to-bottom {
       padding: $to-bottom-padding;
-    }
-    option:not(:first-child) {
-      color: #000;
     }
   }
   & > select:focus + .label {
@@ -166,6 +161,8 @@ export default {
     bottom: 1px;
     width: 50px;
     background: #eee;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
     > .icon-down {
       display: flex;
       align-items: center;
