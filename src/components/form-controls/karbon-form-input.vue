@@ -5,7 +5,7 @@
       {{ prepend }}
     </div>
 
-    <div class="input-container rounded">
+    <div class="input-container">
       <input
         :name="name"
         :value="value"
