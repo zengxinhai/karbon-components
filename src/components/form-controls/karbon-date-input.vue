@@ -2,6 +2,7 @@
   <div class="wrapper rounded">
     <date-picker
       id="picker"
+      v-bind="$attrs"
       :name="name"
       :value="value"
       :disabled="disabled"
@@ -30,6 +31,7 @@ import datePicker from 'vuejs-datepicker';
 export default {
   name: 'karbonDatePicker',
   components: { datePicker },
+  inheritAttrs: false,
   props: {
     name: {
       type: String,

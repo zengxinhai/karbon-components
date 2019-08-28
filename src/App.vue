@@ -23,6 +23,7 @@
       placeholder="Date"
       class="example-item"
       :disabled="true"
+      :format="'yyyy-MM-dd'"
     ></karbon-date-input>
   </div>
 </template>
