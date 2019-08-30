@@ -107,7 +107,6 @@ export default {
 
 .wrapper {
   position: relative;
-  background-color: #f8f9fa;
   outline: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   & > .label {
@@ -139,7 +138,7 @@ export default {
       font-weight: 400;
       border: 1px solid #e0e0e0;
       border-radius: 0.25rem;
-      background: transparent;
+      background: $input-bg-color;
     }
     input:focus {
       border: 1px solid $primary-color;

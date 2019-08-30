@@ -111,6 +111,7 @@ export default {
     font-size: $font-size;
     box-sizing: border-box;
     border-radius: 0.25rem;
+    background: $input-bg-color;
     &:focus {
       border: 1px solid $primary-color;
       transition: border-color .15s ease-in-out;
